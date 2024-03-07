@@ -1,0 +1,30 @@
+export const USERS=[
+    {
+        user:'jose', 
+        image:'https://wallpapers.com/images/featured/batman-beyond-pictures-ykay0r8xgoi41kby.jpg'
+    },
+    {
+        user:'toro', 
+        image:'https://t3.ftcdn.net/jpg/02/50/64/86/360_F_250648617_7wyDhQA4bfHk9eZum62DYmSL7lvetmuq.jpg'
+    },
+    {
+        user:'samuelillo', 
+        image:'https://concepto.de/wp-content/uploads/2018/09/bacteria-e1536617096822.jpg'
+    },
+    {
+        user:'melaku', 
+        image:'https://www.exoticca.com/es/blog/wp-content/uploads/2017/03/blog-tribu-africana-00-cabecera.jpg'
+    },
+    {
+        user:'angel', 
+        image:'https://www.comprarbanderas.es/images/banderas/400/14-reino-unido_400px.jpg'
+    },
+    {
+        user:'juantixisisimo', 
+        image:'https://www.zoomadrid.com/content/dam/zoo/images/animals/gorila-de-costa/Gorila-de-costa-Zoo-Madrid-main.jpg'
+    },
+    {
+        user:'izar', 
+        image:'https://www.duckstore.es/1963-large_default/fantasma.jpg'
+    },
+]
