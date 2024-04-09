@@ -17,8 +17,11 @@ const Posts = ({post}) => {
         <PostImage post={post}/>
 
         <View style={{marginHorizontal: 15, marginTop: 10}}>
-          <PostFooter post={post}/>
+          <PostFooterIconos post={post}/>
           <Likes post={post}/>
+          <Pie post={post}/>
+          <SeccionComentarios post={post}/>
+          <Comentarios post={post}/>
         </View>
         
     </View>
@@ -45,7 +48,7 @@ const PostImage=({post})=>{
   )
 }
 
-const PostFooter=({})=>{
+const PostFooterIconos=({})=>{
   return(
     <View style={{flexDirection:'row'}}>
 
@@ -78,6 +81,37 @@ const Likes=({post})=>{
     </View>
   )
 }
+
+const Pie=({post})=>(
+  <View style={{flexDirection:'row', marginTop:10, marginLeft:2}}>
+     <Text style={{color:'white', fontWeight:600, fontSize:15, marginEnd: 5}}>{post.user}</Text>
+     <Text style={{color:'white', fontSize:13, marginEnd: 5, marginTop:2}}>{post.caption}</Text>
+  </View>
+)
+
+const SeccionComentarios=({post})=>(
+  <View style={{marginTop:10, marginStart:2}}>
+    {!!post.coments.length && ( 
+    <Text style={{color:'lightgray'}}>
+      Mira {post.coments.length > 1 ? 'los ' : 'el ' }
+      {post.coments.length>1 ? 'comentarios' : 'comentario' }
+    </Text>
+     )}
+  </View>
+)
+
+const Comentarios=({post})=>(
+  <View>
+    {post.coments.map((comentario, index)=>(
+      <View style={{marginTop:0, flexDirection:'row', marginLeft:3}}>
+        
+          <Text style={{color:'white', fontWeight:600, fontSize:13, marginEnd: 5}}>{comentario.user}</Text>
+          <Text style={{color:'white', fontSize:13, marginEnd: 5}}>{comentario.comment}</Text>
+      
+      </View>
+    ))}
+  </View>
+)
   
 
 
