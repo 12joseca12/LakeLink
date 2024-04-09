@@ -65,4 +65,16 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop:5,
       }, 
+
+      /* Posts */
+      containerIzqPost:{
+        flexDirection:'row',
+        marginBottom:10
+      },
+      postFooterIcon:{
+        width:25,
+        height:25,
+        tintColor:'white',
+        marginEnd:20
+      },
 });

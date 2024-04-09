@@ -8,6 +8,7 @@ import compartir from '../../assets/compartir.png'
 import comentarios from '../../assets/comentario.png'
 
 
+
 const Posts = ({post}) => {
   return (
     <View style={{marginBottom: 30}}>
