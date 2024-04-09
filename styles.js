@@ -65,4 +65,24 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop:5,
       }, 
+
+      /* Posts */
+      containerIzqPost:{
+        flexDirection:'row',
+        marginBottom:10
+      },
+      postFooterIcon:{
+        width:25,
+        height:25,
+        tintColor:'white',
+        marginEnd:20
+      },
+      fotoPerfPost:{
+        width:40,
+        height:40,
+        borderRadius:50,
+        borderWidth:2,
+        borderColor:'orange',
+        marginEnd:5
+      },
 });

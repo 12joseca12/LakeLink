@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { View, Button } from 'react-native';
+import { styles } from '../../styles'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
@@ -15,25 +17,11 @@ export default function Auth() {
     };
 
     return (
-        <div>
-            <button onClick={() => handleButtonClick('signUp')}>Registrarse</button>
-            <button onClick={() => handleButtonClick('signIn')}>Iniciar sesión</button>
-            {isSignIn ? <SignIn /> : <SignUp />}
-        </div>
-    )
-  /*return (
-    <Router>
-      <Switch>
-        <Route path="/signin">
-          <SignIn />
-        </Route>
-        <Route path="/signup">
-          <SignUp />
-        </Route>
-        <Route path="/">
-          <SignIn />
-        </Route>
-      </Switch>
-    </Router>
-  );*/
+      <View style={styles.container}>
+          <Button title="Registrarse" onPress={() => handleButtonClick('signUp')} />
+          <Button title="Iniciar sesión" onPress={() => handleButtonClick('signIn')} />
+          {isSignIn ? <SignIn /> : <SignUp />}
+      </View>
+  );
+  
 }

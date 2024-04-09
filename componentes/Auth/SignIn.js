@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { View, Text, TextInput, Button } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase-config';
+import { styles } from '../../styles'
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -15,13 +17,25 @@ export default function SignIn() {
   };
 
   return (
-    <div>
-      <h1>Iniciar Sesión</h1>
-      <label htmlFor="email">Correo electrónico</label>
-      <input type="email" id="email" onChange={(ev) => setEmail(ev.target.value)} />
-      <label htmlFor="password">Contraseña</label>
-      <input type="password" id="password" onChange={(ev) => setPassword(ev.target.value)} />
-      <button onClick={signIn}>Iniciar sesión</button>
-    </div>
+    <View style={styles.container}>
+      <Text style={styles.title}>Iniciar Sesión</Text>
+      <Text style={styles.label}>Correo electrónico</Text>
+      <TextInput
+        style={styles.input}
+        onChangeText={setEmail}
+        value={email}
+        placeholder="Correo electrónico"
+        keyboardType="email-address"
+      />
+      <Text style={styles.label}>Contraseña</Text>
+      <TextInput
+        style={styles.input}
+        onChangeText={setPassword}
+        value={password}
+        secureTextEntry
+        placeholder="Contraseña"
+      />
+      <Button onPress={signIn} title="Iniciar sesión" />
+    </View>
   );
 }
