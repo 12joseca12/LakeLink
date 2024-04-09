@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase-config';
-import { styles } from '../../styles'
+import { styles } from '../styles'
 
 export default function SignIn() {
   const [email, setEmail] = useState('');

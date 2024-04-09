@@ -1,6 +1,6 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { styles } from '../../styles'
+import { styles } from '../styles'
 import logoImage from '../../assets/logo.png';
 import iconoBuscar from '../../assets/anadir-imagen.png';
 import corazon from '../../assets/corazon.png';

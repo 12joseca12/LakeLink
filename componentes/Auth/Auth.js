@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Button } from 'react-native';
-import { styles } from '../../styles'
+import { styles } from '../styles'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignUp from './SignUp';
 import SignIn from './SignIn';

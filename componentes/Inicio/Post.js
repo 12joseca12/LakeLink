@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import {Divider} from 'react-native-elements'
-import { styles } from '../../styles'
+import { styles } from '../styles'
 import corazon from '../../assets/corazon.png'
 import guardar from '../../assets/guardar.png'
 import compartir from '../../assets/compartir.png'
@@ -103,7 +103,7 @@ const SeccionComentarios=({post})=>(
 const Comentarios=({post})=>(
   <View>
     {post.coments.map((comentario, index)=>(
-      <View style={{marginTop:0, flexDirection:'row', marginLeft:3}}>
+      <View key={index} style={{marginTop:0, flexDirection:'row', marginLeft:3}}>
         
           <Text style={{color:'white', fontWeight:600, fontSize:13, marginEnd: 5}}>{comentario.user}</Text>
           <Text style={{color:'white', fontSize:13, marginEnd: 5}}>{comentario.comment}</Text>
