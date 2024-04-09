@@ -44,7 +44,7 @@ const PostImage=({post})=>{
   )
 }
 
-const PostFooter=({post})=>{
+const PostFooter=({})=>{
   return(
     <View style={{flexDirection:'row'}}>
 
