@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "com.anonymous.LakeLink.app-mergeDebugResources-38:/values-v28/values-v28.xml",
+=======
+            "outputFile": "com.anonymous.LakeLink.app-mergeDebugResources-41:/values-v28/values-v28.xml",
+>>>>>>> Stashed changes
             "map": [
                 {
                     "source": "C:\\Users\\Carlos\\.gradle\\caches\\transforms-3\\f7c5e03387f63f3788dbd5294d085d57\\transformed\\appcompat-1.4.1\\res\\values-v28\\values-v28.xml",

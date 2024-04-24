@@ -11,10 +11,20 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+<<<<<<< Updated upstream
+=======
+// @react-native-firebase/app
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+>>>>>>> Stashed changes
 // expo
 import expo.modules.ExpoModulesPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
+<<<<<<< Updated upstream
+=======
+// react-native-safe-area-context
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+>>>>>>> Stashed changes
 
 public class PackageList {
   private Application application;
@@ -60,8 +70,15 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+<<<<<<< Updated upstream
       new ExpoModulesPackage(),
       new LinearGradientPackage()
+=======
+      new ReactNativeFirebaseAppPackage(),
+      new ExpoModulesPackage(),
+      new LinearGradientPackage(),
+      new SafeAreaContextPackage()
+>>>>>>> Stashed changes
     ));
   }
 }
