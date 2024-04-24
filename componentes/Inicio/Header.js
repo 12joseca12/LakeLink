@@ -1,13 +1,16 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { styles } from '../../styles'
+import { styles } from '../styles'
 import logoImage from '../../assets/logo.png';
 import iconoBuscar from '../../assets/anadir-imagen.png';
 import corazon from '../../assets/corazon.png';
 import iconoMensaje from '../../assets/mensajes.png';
+import { useNavigation } from '@react-navigation/native';
+
 
 
 const Header = () => {
+   const navigation = useNavigation();
   return (
     <View style={styles.containerLogo}>
 
@@ -24,7 +27,7 @@ const Header = () => {
             <Image source={corazon} style={styles.icono}/>
          </TouchableOpacity>
 
-         <TouchableOpacity>
+         <TouchableOpacity onPress={() => navigation.navigate("SalaChats")}>
             <View style={styles.noLeido}>
                 <Text style={styles.textNoLeido}>12</Text>
             </View>

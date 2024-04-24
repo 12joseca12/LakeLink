@@ -1,6 +1,6 @@
 import { SafeAreaView, ScrollView,} from 'react-native'
 import React from 'react'
-import { styles } from '../styles'
+import { styles } from '../componentes/styles'
 import Header from '../componentes/Inicio/Header'
 import Historias from '../componentes/Inicio/Historias'
 import Post from '../componentes/Inicio/Post'
