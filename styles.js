@@ -85,9 +85,4 @@ export const styles = StyleSheet.create({
         borderColor:'orange',
         marginEnd:5
       },
-      /* Tabs navetgacion */
-      iconoNavegacion:{
-        width:20,
-        height:20
-      }
 });

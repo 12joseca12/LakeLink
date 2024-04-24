@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, Image } from 'react-native'
 import React from 'react'
 import { USERS } from '../../data/usuarios'
-import { styles } from '../styles'
+import { styles } from '../../styles'
 
 const Historias = () => {
   return (
