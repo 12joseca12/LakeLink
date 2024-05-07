@@ -89,29 +89,28 @@ const Pie=({post})=>(
   </View>
 )
 
-const SeccionComentarios=({post})=>(
-  <View style={{marginTop:10, marginStart:2}}>
-    {!!post.coments.length && ( 
-    <Text style={{color:'lightgray'}}>
-      Mira {post.coments.length > 1 ? 'los ' : 'el ' }
-      {post.coments.length>1 ? 'comentarios' : 'comentario' }
-    </Text>
-     )}
+const SeccionComentarios = ({ post }) => (
+  <View style={{ marginTop: 10, marginStart: 2 }}>
+    {!!post && !!post.comments && post.comments.length > 0 && (
+      <Text style={{ color: 'lightgray' }}>
+        Mira {post.comments.length > 1 ? 'los ' : 'el '}
+        {post.comments.length > 1 ? 'comentarios' : 'comentario'}
+      </Text>
+    )}
   </View>
 )
 
-const Comentarios=({post})=>(
+const Comentarios = ({ post }) => (
   <View>
-    {post.coments.map((comentario, index)=>(
-      <View style={{marginTop:0, flexDirection:'row', marginLeft:3}}>
-        
-          <Text style={{color:'white', fontWeight:600, fontSize:13, marginEnd: 5}}>{comentario.user}</Text>
-          <Text style={{color:'white', fontSize:13, marginEnd: 5}}>{comentario.comment}</Text>
-      
+    {post && post.comments && post.comments.map((comentario, index) => (
+      <View key={index} style={{ marginTop: 0, flexDirection: 'row', marginLeft: 3 }}>
+        <Text style={{ color: 'white', fontWeight: 600, fontSize: 13, marginEnd: 5 }}>{comentario.user}</Text>
+        <Text style={{ color: 'white', fontSize: 13, marginEnd: 5 }}>{comentario.comment}</Text>
       </View>
     ))}
   </View>
 )
+
   
 
 
